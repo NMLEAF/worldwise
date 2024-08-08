@@ -1,42 +1,6 @@
 {
   "cities": [
     {
-      "cityName": "Lisbon",
-      "country": "Portugal",
-      "emoji": "🇵🇹",
-      "date": "2027-10-31T15:59:59.138Z",
-      "notes": "My favorite city so far!",
-      "position": {
-        "lat": 38.727881642324164,
-        "lng": -9.140900099907554
-      },
-      "id": "73930385"
-    },
-    {
-      "cityName": "Madrid",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2027-07-15T08:22:53.976Z",
-      "notes": "",
-      "position": {
-        "lat": 40.46635901755316,
-        "lng": -3.7133789062500004
-      },
-      "id": "17806751"
-    },
-    {
-      "cityName": "Berlin",
-      "country": "Germany",
-      "emoji": "🇩🇪",
-      "date": "2027-02-12T09:24:11.863Z",
-      "notes": "Amazing 😃",
-      "position": {
-        "lat": 52.53586782505711,
-        "lng": 13.376933665713324
-      },
-      "id": "98443197"
-    },
-    {
       "id": "b903",
       "cityName": "Nazret",
       "country": "Ethiopia",
@@ -46,6 +10,54 @@
       "position": {
         "lat": "8.564997484810794",
         "lng": "39.2760329146247"
+      }
+    },
+    {
+      "id": "159c",
+      "cityName": "Bulo Burto",
+      "country": "Somalia",
+      "emoji": "🇸🇴",
+      "notes": "",
+      "date": "2024-08-06T00:51:47.523Z",
+      "position": {
+        "lat": "3.9979728724213803",
+        "lng": "46.23071222724941"
+      }
+    },
+    {
+      "id": "7e03",
+      "cityName": "Nairobi",
+      "country": "Kenya",
+      "emoji": "🇰🇪",
+      "notes": "Amazing",
+      "date": "2024-08-06T00:51:47.523Z",
+      "position": {
+        "lat": "-1.2603048147566793",
+        "lng": "36.83692565121643"
+      }
+    },
+    {
+      "id": "679659",
+      "cityName": "Jimma",
+      "country": "Ethiopia",
+      "emoji": "🇪🇹",
+      "notes": "JIT campus",
+      "date": "2024-08-06T00:51:47.523Z",
+      "position": {
+        "lat": "7.750183028767418",
+        "lng": "36.875108156446174"
+      }
+    },
+    {
+      "id": "ecf0",
+      "cityName": "Lisbon",
+      "country": "Portugal",
+      "emoji": "🇵🇹",
+      "notes": "Are you there Jonas",
+      "date": "2024-08-06T03:52:50.121Z",
+      "position": {
+        "lat": "38.71913360848539",
+        "lng": "-9.133856966147006"
       }
     }
   ]

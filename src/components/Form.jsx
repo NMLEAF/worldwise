@@ -23,7 +23,8 @@ export function convertToEmoji(countryCode) {
 
 function Form() {
   const [lat, lng] = useUrlPosition();
-  const { createCity } = useCities();
+  const { createCity, isLoading } = useCities();
+  const navigate = useNavigate();
 
   const [cityName, setCityName] = useState('');
   const [country, setCountry] = useState('');
@@ -75,7 +76,6 @@ function Form() {
           );
           const data = await res.json();
 
-          if (!data) throw new Error('Failed to fetch 💥');
           if (!data.countryCode)
             throw new Error(
               `That doesn't seem to be a city, Click somewhere else 😉`
@@ -83,7 +83,6 @@ function Form() {
 
           setCityName(data.city || data.locality || '');
           setCountry(data.countryName);
-          console.log(data);
           setEmoji(convertToEmoji(data.countryCode));
         } catch (err) {
           setGeocodingError(err.message);
@@ -96,7 +95,7 @@ function Form() {
     [lat, lng]
   );
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
 
     if (!cityName || !date) return;
@@ -113,7 +112,8 @@ function Form() {
       },
     };
 
-    createCity(newCity);
+    await createCity(newCity);
+    navigate('/app/cities');
   }
 
   if (isLoadingGeocoding) return <Spinner />;
@@ -123,7 +123,7 @@ function Form() {
 
   return (
     <form
-      className={styles.form}
+      className={`${styles.form} ${isLoading ? styles.loading : ''}`}
       // onSubmit={handleAddCity}
       onSubmit={handleSubmit}
     >
