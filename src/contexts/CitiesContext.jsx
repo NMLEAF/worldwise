@@ -157,9 +157,9 @@ function CitiesProvider({ children }) {
     });
 
     try {
-      const res = await fetch(`${BASE_URL}/cities/${id}`, {
-        method: 'DELETE',
-      });
+      // const res = await fetch(`${BASE_URL}/cities/${id}`, {
+      //   method: 'DELETE',
+      // });
 
       // setCities(cities => cities.filter(city => city.id !== id));
       dispatch({ type: 'city/deleted', payload: id });
